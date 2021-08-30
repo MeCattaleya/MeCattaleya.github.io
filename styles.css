@@ -1,0 +1,132 @@
+body {
+    font-family:'Lora';
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1.3px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+table { 
+    /* text-align: center; */
+    line-height: 200%;
+    width: 300px;
+    height: 200px;
+    border-top: 5px solid #ff66ce;
+    color: #496bd8;
+    font-weight: bold;
+}
+
+table th {
+    text-align: left;
+    color: #2a3655;
+}
+
+h1 {
+    color:#2a3655;
+}
+
+h3 {
+    color:blueviolet;
+    font-size: 34px;
+    font-weight: 900;
+    margin: 0;
+}
+
+p {
+    color:rgb(9, 115, 119);
+    font-weight: bold;
+    text-indent: 50px;
+}
+
+.sup_element {
+    color: #2a3655;
+}
+
+footer strong {
+    text-decoration: underline wavy #ff66ce
+}
+
+mark{
+    border-radius:5px;
+}
+
+div#main-content {
+    background-image: linear-gradient(170deg, #fff7f6, #cacaca);
+    padding-left: 30px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse;---> robi, że kolumna będzie z lewej strony */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center;
+    justify-content: space-around;
+    justify-content: flex-end;
+    align-content: center; */
+}
+
+a:hover{
+    color:greenyellow
+}
+
+a { 
+color: #20d0ff;
+}
+
+/* div:hover{
+    color:rgb(129, 10, 153)
+}
+
+table tr:firts-child {
+    color: blue;
+} */
+
+article {
+    margin-bottom: 80px;
+}
+
+#articles {
+    flex-grow: 1;
+}
+
+#skills {
+    flex-grow: 1;
+    /* align-self: center; */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+    /* background-color: #fff7f6; */
+    background-image: linear-gradient(45deg, #ebf9ff, #fff7f6);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: none;
+    text-align: center;
+    width: 100%;
+    background-color: #20d0ff;
+    color: #2a3655;
+}
+
+@media screen and (min-witdth: 600px) {
+    footer {
+        position: fixed;
+    }
+}
+
+@media screen amd (max-width: 600px) {
+    div#main-content, header {
+        flex-direction: column;
+    }
+}
